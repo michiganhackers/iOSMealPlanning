@@ -19,6 +19,7 @@
 		C37E66802729D640009DA89D /* GroceryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E667F2729D640009DA89D /* GroceryListViewController.swift */; };
 		C37E66832729D653009DA89D /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E66822729D653009DA89D /* RecipesViewController.swift */; };
 		C37E66862729D6BB009DA89D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E66852729D6BB009DA89D /* Constants.swift */; };
+		E9FEF746272B5C6800D3BCB9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FEF745272B5C6800D3BCB9 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		C37E667F2729D640009DA89D /* GroceryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListViewController.swift; sourceTree = "<group>"; };
 		C37E66822729D653009DA89D /* RecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
 		C37E66852729D6BB009DA89D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E9FEF745272B5C6800D3BCB9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				C37E667C2729D634009DA89D /* HomeViewController.swift */,
 				C37E667F2729D640009DA89D /* GroceryListViewController.swift */,
 				C37E66822729D653009DA89D /* RecipesViewController.swift */,
+				E9FEF745272B5C6800D3BCB9 /* SignUpViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				C37E66772729D613009DA89D /* LoginViewController.swift in Sources */,
 				C37E66802729D640009DA89D /* GroceryListViewController.swift in Sources */,
 				C37E667A2729D62B009DA89D /* RegisterViewController.swift in Sources */,
+				E9FEF746272B5C6800D3BCB9 /* SignUpViewController.swift in Sources */,
 				C37E66642729D1F4009DA89D /* StartupScreenViewController.swift in Sources */,
 				C37E66602729D1F4009DA89D /* AppDelegate.swift in Sources */,
 				C37E66622729D1F4009DA89D /* SceneDelegate.swift in Sources */,

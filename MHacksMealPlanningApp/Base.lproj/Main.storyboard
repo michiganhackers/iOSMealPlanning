@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pmm-oL-Jcn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pmm-oL-Jcn">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Faz-Cc-njn" customClass="RoundedButton" customModule="MealDeals" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Faz-Cc-njn">
                                 <rect key="frame" x="41" y="607" width="332" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
@@ -27,7 +28,7 @@
                                     <segue destination="cA3-jS-Lnj" kind="presentation" modalPresentationStyle="fullScreen" id="OaT-rd-5TH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmy-am-Yfe" customClass="RoundedButton" customModule="MealDeals" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmy-am-Yfe">
                                 <rect key="frame" x="41" y="729" width="332" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
@@ -49,10 +50,6 @@
                         <viewLayoutGuide key="safeArea" id="CT3-5y-daS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <connections>
-                        <outlet property="logInButton" destination="Faz-Cc-njn" id="AdC-4N-Flz"/>
-                        <outlet property="registerButton" destination="lmy-am-Yfe" id="kc0-nb-bUH"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ioO-BI-j1F" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,7 +58,7 @@
         <!--Login View Controller-->
         <scene sceneID="pGb-lm-8Be">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="cA3-jS-Lnj" customClass="LoginViewController" customModule="MealDeals" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="cA3-jS-Lnj" customClass="LoginViewController" customModule="MHacksMealPlanningApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0Wp-lc-SjH"/>
                         <viewControllerLayoutGuide type="bottom" id="9uH-S4-ff2"/>
@@ -149,6 +146,17 @@
                                                     <constraint firstItem="usk-MN-Cof" firstAttribute="width" secondItem="Owr-vB-Joo" secondAttribute="width" id="ysR-Xq-Coi"/>
                                                 </constraints>
                                             </view>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ku5-A4-iS5">
+                                                <rect key="frame" x="41" y="714" width="332" height="74"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                <state key="normal" title="Log In">
+                                                    <color key="titleColor" systemColor="systemGray5Color"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="UsP-Ip-wto" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="UCb-w4-xbM"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -193,11 +201,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LQE-vj-7y0"/>
-                    <connections>
-                        <outlet property="emailField" destination="Owr-vB-Joo" id="E5u-pP-YuE"/>
-                        <outlet property="passField" destination="97N-we-8Ha" id="3L6-19-XRc"/>
-                        <segue destination="UsP-Ip-wto" kind="presentation" identifier="LoginToHome" modalPresentationStyle="fullScreen" id="xrH-VG-gtV"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nMw-BF-yay" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -215,9 +218,6 @@
                                 <rect key="frame" x="34" y="38" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign Out"/>
-                                <connections>
-                                    <action selector="logoutButtonPressed:" destination="5Gj-ft-Q8h" eventType="touchUpInside" id="k64-Qm-acG"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUc-E7-PyF">
                                 <rect key="frame" x="84" y="94" width="246" height="46"/>
@@ -250,7 +250,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="4AR-7A-53U">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4AR-7A-53U" id="KQ2-vc-RYA">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -280,6 +280,7 @@
         <scene sceneID="U3a-EM-dmy">
             <objects>
                 <tabBarController id="UsP-Ip-wto" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Rop-dI-1j6"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8FX-fJ-Mjc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -295,10 +296,10 @@
             </objects>
             <point key="canvasLocation" x="3852" y="105"/>
         </scene>
-        <!--Recipes View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="7nI-IN-Uaz">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="sz1-zQ-lxA" customClass="RecipesViewController" customModule="MHacksMealPlanningApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="sz1-zQ-lxA" customClass="SignUpViewController" customModule="MHacksMealPlanningApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FA2-od-BHz"/>
                         <viewControllerLayoutGuide type="bottom" id="kYw-8g-gOv"/>
@@ -433,6 +434,17 @@
                                                     <constraint firstItem="ux7-RO-gMH" firstAttribute="top" secondItem="Ssu-Rv-kVe" secondAttribute="bottom" constant="4" id="y2E-2U-nGm"/>
                                                 </constraints>
                                             </view>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udd-6J-AhA">
+                                                <rect key="frame" x="41" y="721" width="332" height="74"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                <state key="normal" title="Sign Up">
+                                                    <color key="titleColor" systemColor="systemGray5Color"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="UsP-Ip-wto" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="HvG-pY-cYj"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -475,12 +487,6 @@
                             <constraint firstAttribute="trailing" secondItem="W5K-xg-u1L" secondAttribute="trailing" id="lQo-ot-PgS"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="emailField" destination="YOe-aV-MvV" id="Dwp-Jf-iO3"/>
-                        <outlet property="passwordField" destination="qma-Ab-KNw" id="mCn-La-DQ8"/>
-                        <outlet property="usernameField" destination="Ssu-Rv-kVe" id="mI7-zm-2Pb"/>
-                        <segue destination="UsP-Ip-wto" kind="presentation" identifier="RegisterToHome" modalPresentationStyle="fullScreen" id="TrU-HL-xw9"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lQ7-hX-Byz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -500,7 +506,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="CHr-x2-SQN">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CHr-x2-SQN" id="X9j-bl-I63">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -528,7 +534,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xrH-VG-gtV"/>
+        <segue reference="HvG-pY-cYj"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="backArrow" width="25" height="25"/>
@@ -536,8 +542,11 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemTealColor">
-            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
