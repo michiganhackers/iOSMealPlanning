@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39AC35EC2747344000A9AD52 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AC35EB2747343F00A9AD52 /* Gradient.swift */; };
 		C37E66602729D1F4009DA89D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E665F2729D1F4009DA89D /* AppDelegate.swift */; };
 		C37E66622729D1F4009DA89D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E66612729D1F4009DA89D /* SceneDelegate.swift */; };
 		C37E66642729D1F4009DA89D /* StartupScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E66632729D1F4009DA89D /* StartupScreenViewController.swift */; };
@@ -22,10 +23,10 @@
 		E9B1A0CA273DEFA50048C1D8 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B1A0C9273DEFA50048C1D8 /* Recipe.swift */; };
 		E9B1A0CC273DEFCC0048C1D8 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B1A0CB273DEFCC0048C1D8 /* Ingredient.swift */; };
 		E9B1A0CE273DF04C0048C1D8 /* Backend.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B1A0CD273DF04C0048C1D8 /* Backend.swift */; };
-		E9FEF746272B5C6800D3BCB9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FEF745272B5C6800D3BCB9 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39AC35EB2747343F00A9AD52 /* Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 		C37E665C2729D1F4009DA89D /* MHacksMealPlanningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHacksMealPlanningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37E665F2729D1F4009DA89D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C37E66612729D1F4009DA89D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,7 +44,6 @@
 		E9B1A0C9273DEFA50048C1D8 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		E9B1A0CB273DEFCC0048C1D8 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		E9B1A0CD273DF04C0048C1D8 /* Backend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backend.swift; sourceTree = "<group>"; };
-		E9FEF745272B5C6800D3BCB9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +80,7 @@
 				C37E665F2729D1F4009DA89D /* AppDelegate.swift */,
 				C37E66612729D1F4009DA89D /* SceneDelegate.swift */,
 				C37E66652729D1F4009DA89D /* Main.storyboard */,
+				39AC35EB2747343F00A9AD52 /* Gradient.swift */,
 				C37E66742729D58F009DA89D /* View Controllers */,
 				C37E66682729D1FD009DA89D /* Assets.xcassets */,
 				C37E666A2729D1FD009DA89D /* LaunchScreen.storyboard */,
@@ -98,7 +99,6 @@
 				C37E667C2729D634009DA89D /* HomeViewController.swift */,
 				C37E667F2729D640009DA89D /* GroceryListViewController.swift */,
 				C37E66822729D653009DA89D /* RecipesViewController.swift */,
-				E9FEF745272B5C6800D3BCB9 /* SignUpViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -187,7 +187,6 @@
 				C37E66772729D613009DA89D /* LoginViewController.swift in Sources */,
 				C37E66802729D640009DA89D /* GroceryListViewController.swift in Sources */,
 				C37E667A2729D62B009DA89D /* RegisterViewController.swift in Sources */,
-				E9FEF746272B5C6800D3BCB9 /* SignUpViewController.swift in Sources */,
 				C37E66642729D1F4009DA89D /* StartupScreenViewController.swift in Sources */,
 				E9B1A0CE273DF04C0048C1D8 /* Backend.swift in Sources */,
 				C37E66602729D1F4009DA89D /* AppDelegate.swift in Sources */,
@@ -195,6 +194,7 @@
 				E9B1A0CC273DEFCC0048C1D8 /* Ingredient.swift in Sources */,
 				C37E667D2729D634009DA89D /* HomeViewController.swift in Sources */,
 				C37E66862729D6BB009DA89D /* Constants.swift in Sources */,
+				39AC35EC2747344000A9AD52 /* Gradient.swift in Sources */,
 				E9B1A0CA273DEFA50048C1D8 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

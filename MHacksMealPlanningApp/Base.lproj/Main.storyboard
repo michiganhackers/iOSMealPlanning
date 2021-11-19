@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pmm-oL-Jcn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pmm-oL-Jcn">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -88,7 +88,7 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Owr-vB-Joo">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Owr-vB-Joo" userLabel="EmailTextfield">
                                                         <rect key="frame" x="12" y="85" width="318" height="23"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -107,7 +107,7 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="97N-we-8Ha">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="97N-we-8Ha" userLabel="PasswordTextfield">
                                                         <rect key="frame" x="12" y="158" width="318" height="22"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -154,6 +154,7 @@
                                                     <color key="titleColor" systemColor="systemGray5Color"/>
                                                 </state>
                                                 <connections>
+                                                    <action selector="loginButtonPressed:" destination="cA3-jS-Lnj" eventType="touchUpInside" id="4m5-Ae-bdS"/>
                                                     <segue destination="UsP-Ip-wto" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="UCb-w4-xbM"/>
                                                 </connections>
                                             </button>
@@ -182,7 +183,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" image="backArrow"/>
                                 <connections>
-                                    <action selector="dismissButtonPressed:" destination="cA3-jS-Lnj" eventType="touchUpInside" id="pPO-P6-kQv"/>
+                                    <action selector="dismissButtonPressed:" destination="cA3-jS-Lnj" eventType="touchUpInside" id="qtd-I8-a2E"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -201,6 +202,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LQE-vj-7y0"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="Owr-vB-Joo" id="vMw-4n-djP"/>
+                        <outlet property="passwordTextField" destination="97N-we-8Ha" id="1PK-5s-Z3y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nMw-BF-yay" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -296,10 +301,10 @@
             </objects>
             <point key="canvasLocation" x="3852" y="105"/>
         </scene>
-        <!--Sign Up View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="7nI-IN-Uaz">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="sz1-zQ-lxA" customClass="SignUpViewController" customModule="MHacksMealPlanningApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="sz1-zQ-lxA" customClass="RegisterViewController" customModule="MHacksMealPlanningApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FA2-od-BHz"/>
                         <viewControllerLayoutGuide type="bottom" id="kYw-8g-gOv"/>
@@ -337,7 +342,7 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ssu-Rv-kVe">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ssu-Rv-kVe" userLabel="NameTextfield">
                                                         <rect key="frame" x="12" y="179" width="318" height="23"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -356,7 +361,7 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YOe-aV-MvV">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YOe-aV-MvV" userLabel="EmailTextfield">
                                                         <rect key="frame" x="12" y="252" width="318" height="23"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -375,7 +380,7 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qma-Ab-KNw">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qma-Ab-KNw" userLabel="PasswordTextfield">
                                                         <rect key="frame" x="12" y="319" width="318" height="22"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -469,7 +474,8 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" image="backArrow"/>
                                 <connections>
-                                    <action selector="dismissButtonPressed:" destination="sz1-zQ-lxA" eventType="touchUpInside" id="TUm-SX-Uqp"/>
+                                    <action selector="dismissButtonPressed:" destination="sz1-zQ-lxA" eventType="touchUpInside" id="Cbx-T6-WYC"/>
+                                    <action selector="dismissButtonPressed:" destination="gQc-SS-hhB" eventType="touchUpInside" id="TAn-hX-xIe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -487,10 +493,16 @@
                             <constraint firstAttribute="trailing" secondItem="W5K-xg-u1L" secondAttribute="trailing" id="lQo-ot-PgS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="YOe-aV-MvV" id="rxs-96-JCd"/>
+                        <outlet property="nameTextField" destination="Ssu-Rv-kVe" id="Sam-4g-eLP"/>
+                        <outlet property="passwordTextField" destination="qma-Ab-KNw" id="wr5-nR-D9E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lQ7-hX-Byz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="gQc-SS-hhB" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1445" y="468"/>
+            <point key="canvasLocation" x="1444.9275362318842" y="467.41071428571428"/>
         </scene>
         <!--Recipe LIst-->
         <scene sceneID="lyE-UU-pRe">
