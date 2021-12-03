@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9A9BD682734AB3C00985B1D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9A9BD672734AB3C00985B1D /* GoogleService-Info.plist */; };
 		C37E66602729D1F4009DA89D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E665F2729D1F4009DA89D /* AppDelegate.swift */; };
 		C37E66622729D1F4009DA89D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E66612729D1F4009DA89D /* SceneDelegate.swift */; };
 		C37E66642729D1F4009DA89D /* StartupScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E66632729D1F4009DA89D /* StartupScreenViewController.swift */; };
@@ -14,15 +15,18 @@
 		C37E66692729D1FD009DA89D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C37E66682729D1FD009DA89D /* Assets.xcassets */; };
 		C37E666C2729D1FD009DA89D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37E666A2729D1FD009DA89D /* LaunchScreen.storyboard */; };
 		C37E66772729D613009DA89D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E66762729D613009DA89D /* LoginViewController.swift */; };
-		C37E667A2729D62B009DA89D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E66792729D62B009DA89D /* RegisterViewController.swift */; };
 		C37E667D2729D634009DA89D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E667C2729D634009DA89D /* HomeViewController.swift */; };
 		C37E66802729D640009DA89D /* GroceryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E667F2729D640009DA89D /* GroceryListViewController.swift */; };
 		C37E66832729D653009DA89D /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E66822729D653009DA89D /* RecipesViewController.swift */; };
 		C37E66862729D6BB009DA89D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E66852729D6BB009DA89D /* Constants.swift */; };
 		E9FEF746272B5C6800D3BCB9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FEF745272B5C6800D3BCB9 /* SignUpViewController.swift */; };
+		FF6E1CB9B67F6C5697C95B42 /* Pods_MHacksMealPlanningApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF0FBBE0A33BB90D2FFAC81 /* Pods_MHacksMealPlanningApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BF0FBBE0A33BB90D2FFAC81 /* Pods_MHacksMealPlanningApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MHacksMealPlanningApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D57F60C661B402C401FD6E /* Pods-MHacksMealPlanningApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHacksMealPlanningApp.debug.xcconfig"; path = "Target Support Files/Pods-MHacksMealPlanningApp/Pods-MHacksMealPlanningApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B9A9BD672734AB3C00985B1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C37E665C2729D1F4009DA89D /* MHacksMealPlanningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHacksMealPlanningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37E665F2729D1F4009DA89D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C37E66612729D1F4009DA89D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,11 +36,11 @@
 		C37E666B2729D1FD009DA89D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C37E666D2729D1FD009DA89D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C37E66762729D613009DA89D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		C37E66792729D62B009DA89D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C37E667C2729D634009DA89D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C37E667F2729D640009DA89D /* GroceryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListViewController.swift; sourceTree = "<group>"; };
 		C37E66822729D653009DA89D /* RecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
 		C37E66852729D6BB009DA89D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DCB27867FAA74C7DB0AD7621 /* Pods-MHacksMealPlanningApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHacksMealPlanningApp.release.xcconfig"; path = "Target Support Files/Pods-MHacksMealPlanningApp/Pods-MHacksMealPlanningApp.release.xcconfig"; sourceTree = "<group>"; };
 		E9FEF745272B5C6800D3BCB9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,17 +49,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF6E1CB9B67F6C5697C95B42 /* Pods_MHacksMealPlanningApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19ECBDE3DE060612166116FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46D57F60C661B402C401FD6E /* Pods-MHacksMealPlanningApp.debug.xcconfig */,
+				DCB27867FAA74C7DB0AD7621 /* Pods-MHacksMealPlanningApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C37E66532729D1F4009DA89D = {
 			isa = PBXGroup;
 			children = (
 				C37E665E2729D1F4009DA89D /* MHacksMealPlanningApp */,
 				C37E665D2729D1F4009DA89D /* Products */,
+				19ECBDE3DE060612166116FD /* Pods */,
+				FCD914D8102A3EA9D2B29AF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +89,7 @@
 				C37E665F2729D1F4009DA89D /* AppDelegate.swift */,
 				C37E66612729D1F4009DA89D /* SceneDelegate.swift */,
 				C37E66652729D1F4009DA89D /* Main.storyboard */,
+				B9A9BD672734AB3C00985B1D /* GoogleService-Info.plist */,
 				C37E66742729D58F009DA89D /* View Controllers */,
 				C37E66682729D1FD009DA89D /* Assets.xcassets */,
 				C37E666A2729D1FD009DA89D /* LaunchScreen.storyboard */,
@@ -87,13 +104,20 @@
 			children = (
 				C37E66632729D1F4009DA89D /* StartupScreenViewController.swift */,
 				C37E66762729D613009DA89D /* LoginViewController.swift */,
-				C37E66792729D62B009DA89D /* RegisterViewController.swift */,
 				C37E667C2729D634009DA89D /* HomeViewController.swift */,
 				C37E667F2729D640009DA89D /* GroceryListViewController.swift */,
 				C37E66822729D653009DA89D /* RecipesViewController.swift */,
 				E9FEF745272B5C6800D3BCB9 /* SignUpViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FCD914D8102A3EA9D2B29AF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BF0FBBE0A33BB90D2FFAC81 /* Pods_MHacksMealPlanningApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,9 +127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C37E66702729D1FD009DA89D /* Build configuration list for PBXNativeTarget "MHacksMealPlanningApp" */;
 			buildPhases = (
+				AF3F78789AFBCD1BF2511EA9 /* [CP] Check Pods Manifest.lock */,
 				C37E66582729D1F4009DA89D /* Sources */,
 				C37E66592729D1F4009DA89D /* Frameworks */,
 				C37E665A2729D1F4009DA89D /* Resources */,
+				20C8FB47CC11E91B925EAA2E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,12 +180,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				C37E666C2729D1FD009DA89D /* LaunchScreen.storyboard in Resources */,
+				B9A9BD682734AB3C00985B1D /* GoogleService-Info.plist in Resources */,
 				C37E66692729D1FD009DA89D /* Assets.xcassets in Resources */,
 				C37E66672729D1F4009DA89D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20C8FB47CC11E91B925EAA2E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MHacksMealPlanningApp/Pods-MHacksMealPlanningApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MHacksMealPlanningApp/Pods-MHacksMealPlanningApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MHacksMealPlanningApp/Pods-MHacksMealPlanningApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF3F78789AFBCD1BF2511EA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MHacksMealPlanningApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C37E66582729D1F4009DA89D /* Sources */ = {
@@ -169,7 +238,6 @@
 				C37E66832729D653009DA89D /* RecipesViewController.swift in Sources */,
 				C37E66772729D613009DA89D /* LoginViewController.swift in Sources */,
 				C37E66802729D640009DA89D /* GroceryListViewController.swift in Sources */,
-				C37E667A2729D62B009DA89D /* RegisterViewController.swift in Sources */,
 				E9FEF746272B5C6800D3BCB9 /* SignUpViewController.swift in Sources */,
 				C37E66642729D1F4009DA89D /* StartupScreenViewController.swift in Sources */,
 				C37E66602729D1F4009DA89D /* AppDelegate.swift in Sources */,
@@ -319,6 +387,7 @@
 		};
 		C37E66712729D1FD009DA89D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46D57F60C661B402C401FD6E /* Pods-MHacksMealPlanningApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -328,7 +397,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.drewscheffer.MHacksMealPlanningApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michhackers.MHacksMealPlanningApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -337,6 +406,7 @@
 		};
 		C37E66722729D1FD009DA89D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCB27867FAA74C7DB0AD7621 /* Pods-MHacksMealPlanningApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -346,7 +416,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.drewscheffer.MHacksMealPlanningApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michhackers.MHacksMealPlanningApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

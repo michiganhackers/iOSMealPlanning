@@ -9,8 +9,8 @@ import Foundation
 
 struct K {
     struct Segues {
-        let loginSegueID = "LoginToHome"
-        let registerSegueID = "RegisterToHome"
+        static let loginSegueID = "LoginToHome"
+        static let SignUpSegueID = "SignUpSegue"
     }
     
     let theBestSlurpeeFlavor = "Coke" //Non-negotiable
